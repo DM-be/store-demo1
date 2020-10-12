@@ -1,13 +1,8 @@
 import { Action } from "@ngrx/store";
 
 
-export enum CountActionTypes  {
-  INCREMENT_COUNT = '[COUNT] increment counter'
-}
+// create an enum with action types
 
-export class IncrementCounterAction implements Action {
-   readonly type = CountActionTypes.INCREMENT_COUNT;
-}
+// export a class implementing an action
 
-
-export type CountAction = IncrementCounterAction;
+// export CountAction type 

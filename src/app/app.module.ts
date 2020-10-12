@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { CountReducer } from './store/count.reducer';
+//import { CountReducer } from './store/count.reducer';
 import { CounterComponent } from './counter/counter.component';
 
 
@@ -13,7 +13,7 @@ import { CounterComponent } from './counter/counter.component';
   imports:      [ BrowserModule, FormsModule,
    StoreModule.forRoot(
       {
-        countState: CountReducer
+       // countState: CountReducer // we need to tell the store what reducer to use for this state
       },
       {}
     ),],

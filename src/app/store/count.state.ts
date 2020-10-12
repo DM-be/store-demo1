@@ -1,9 +1,8 @@
 
+// our count state interface
 export interface CountState {
   count: number;
 }
 
+// create initial state 
 
-export const initialCountState: CountState = {
-  count: 0
-}
