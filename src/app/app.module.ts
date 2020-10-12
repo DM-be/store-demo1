@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { CounterComponent } from './counter/counter.component';
 import { CountReducer } from './store/count.reducer';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
