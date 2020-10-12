@@ -7,9 +7,11 @@ import { CountState } from "./count.state";
 export function CountReducer(state: CountState = initialCountState, action: CountAction): CountState {
   switch(action.type)
   {
-    case CountActionTypes.INCREMENT_COUNT:
+    case CountActionTypes.INCREMENT_COUNT: 
+    let count = state.count;
+    count++;
     return {
-      state
+      count
     }
   }
   

@@ -4,6 +4,6 @@ export interface CountState {
 }
 
 
-export const initialCountState = {
+export const initialCountState: CountState = {
   count: 0
 }
