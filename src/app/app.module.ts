@@ -13,7 +13,7 @@ import { CounterComponent } from './counter/counter.component';
   imports:      [ BrowserModule, FormsModule,
    StoreModule.forRoot(
       {
-        count: CountReducer
+        countState: CountReducer
       },
       {}
     ),],

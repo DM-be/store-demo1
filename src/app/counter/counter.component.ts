@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { AppState } from '../store/app.state';
+import { IncrementCounterAction } from '../store/count.action';
 import { CountState } from '../store/count.state';
 
 @Component({
@@ -17,9 +18,11 @@ export class CounterComponent implements OnInit {
   constructor(private store: Store<AppState>) { }
 
   ngOnInit() {
-    this.count$ = this.store.select(state =>  state.count.count);
-    console.log(this.count$)
-    console.log('test')
+    this.count$ = this.store.select(state =>  state.countState.count);
+  }
+
+  public dispatchIncrement(): void {
+    this.store.dispatch(new IncrementCounterAction());
   }
 
 }
