@@ -1,3 +1,5 @@
-export function CountReducer(state: object, action: object) {
+import { CountState } from "./count.state";
+
+export function CountReducer(state: CountState, action: object) {
   
 }
